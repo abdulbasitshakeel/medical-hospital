@@ -164,7 +164,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>About Us</h4>
+                                    <h4>About us</h4>
                                     <div class="footer-pera">
                                         <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
                                         <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
@@ -176,7 +176,7 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-number mb-50">
                                     <h4><span>+022 </span> 2108318</h4>
-                                    <p>Plusemedical@gmail.com</p>
+                                    <p>Pluseshgsgdggsmedical@gmail.com</p>
                                 </div>
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
