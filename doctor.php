@@ -46,7 +46,7 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -55,23 +55,23 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="doctor.html">Doctors</a></li>
-                                        <li><a href="department.html">Department</a></li>
-                                        <li><a href="blog.html">Blog</a>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="doctor.php">Doctors</a></li>
+                                        <li><a href="department.php">Department</a></li>
+                                        <li><a href="blog.php">Blog</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="blog_details.php">Blog Details</a></li>
+                                                <li><a href="elements.php">Element</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">01654.066.456</a>
+                                <a href="#" class="btn header-btn">(022) 2108318</a>
                             </div>
                         </div>
                     </div>   
@@ -121,7 +121,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Alvin Maxwell</a></h3>
-                            <span>Creative UI Designer</span>
+                            <span>Cardiology</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -139,7 +139,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Maria Smith</a></h3>
-                            <span>Agency Manager</span>
+                            <span>Dermotology</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Angela Doe</a></h3>
-                            <span>Designer</span>
+                            <span>Family Medicine</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -175,7 +175,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Angela Doe</a></h3>
-                            <span>Designer</span>
+                            <span>Neurology</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -193,7 +193,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Alvin Maxwell</a></h3>
-                            <span>Creative UI Designer</span>
+                            <span>Internal Medicine</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -211,7 +211,7 @@
                         </div>
                         <div class="team-caption">
                             <h3><a href="#">Maria Smith</a></h3>
-                            <span>Agency Manager</span>
+                            <span>Emergency Medicine</span>
                             <!-- Team social -->
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -255,8 +255,8 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-number mb-50">
-                                    <h4><span>+564 </span>7885 3222</h4>
-                                    <p>youremail@gmail.com</p>
+                                    <h4><span>+022  </span>2108318</h4>
+                                    <p>plusemedical@gmail.com</p>
                                 </div>
                                 <!-- Form -->
                                 <div class="footer-form">
@@ -281,17 +281,17 @@
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="index.php" target="_blank">A/B</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4">
                             <!-- Footer Social -->
                             <div class="footer-social f-right">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="index.php"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
