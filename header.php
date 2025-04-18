@@ -155,7 +155,7 @@
 </head>
 <body>
   <!-- ? Preloader Start -->
-  <div id="preloader-active">
+    <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -200,14 +200,7 @@
                                 </nav>
                             </div>
                             <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                            <?php if (isset($_SESSION['user_name']) && isset($_SESSION['user_role'])): ?>
-                                <span style="margin-right: 12px; color: #007BFF; font-weight: 600;">
-                                    👋 Welcome, <?php echo htmlspecialchars($_SESSION['user_role']); ?>
-                                </span>
-                                <a href="logout.php" class="btn header-btn" style="background-color: #dc3545;">Logout</a>
-                            <?php else: ?>
                                 <a href="#" class="btn header-btn" id="openModalBtn">Login</a>
-                            <?php endif; ?>
                             </div>
                         </div>
                     </div>   
