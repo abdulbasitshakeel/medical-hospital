@@ -3,23 +3,23 @@
 if (isset($_POST['submit'])) 
 { 
     extract($_POST);
-    $sql="INSERT INTO user(Name, Email, Password) VALUES ('$Name','$EmailAddress','$Password')";
+    $sql="SELECT * FROM user WHERE Email = '$EmailAddress' AND Password = '$Password'";
     $result = $conn->query($sql);
         
-    if($result)
+    if($result->num_rows > 0)
     {
-        header("location:index.php");
+        header("location:welcome.php");
     }
     else
     {
-        header("location:signin.php");
+        header("location:index.php");
     }
 }
 ?>
 <!doctype html>
 <html lang="en">
     <head>
-        <title>SignIn</title>
+        <title>LogIn</title>
         <meta charset="utf-8" />
         <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"
@@ -49,9 +49,9 @@ if (isset($_POST['submit']))
                 color: #333;
                 margin-bottom: 20px;
             }
-            input[type="text"], 
             input[type="email"], 
-            input[type="password"] {
+            input[type="password"]
+             {
                 width: 100%;
                 padding: 12px;
                 margin: 10px 0;
@@ -62,10 +62,9 @@ if (isset($_POST['submit']))
                 outline: none;
                 transition: all 0.3s ease;
             }
-
-            input[type="text"]:focus, 
             input[type="email"]:focus, 
-            input[type="password"]:focus {
+            input[type="password"]:focus
+             {
                 border-color: #007bff;
                 box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
             }
@@ -85,7 +84,6 @@ if (isset($_POST['submit']))
                 border-color: #007bff;
                 box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
             }
-
             button[type="submit"] {
                 width: 100%;
                 padding: 12px;
@@ -126,21 +124,20 @@ if (isset($_POST['submit']))
                 <div class="work">
                     <form method="post">
                         <div class="heading">
-                            <h1>SignIn</h1>
+                            <h1>LogIn</h1>
                         </div>
-                        <input type="text" name="Name" id="name" placeholder="Name..." required>
+                        <input type="email" name="EmailAddress" id="email" placeholder="Email..." required>  
                         <select name="name" id="name" required>
                             <option value="">Select option...</option>
                             <option value="Admin">Admin</option>
                             <option value="User">Doctor</option>
                             <option value="User">patient</option>
                         </select>
-                        <input type="email" name="EmailAddress" id="email" placeholder="Email..." required>
                         <input type="password" name="Password" id="password" placeholder="Password..." required>
                         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                     </form>
                     <div class="buttontopwork">
-                        <a href="index.php">Already Have An Account</a>
+                        <a href="signin.php">Create New Account</a>
                     </div>
                 </div>
             </div>
