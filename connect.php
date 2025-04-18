@@ -1,9 +1,10 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "medical";
+$password = ""; // or your DB password
+$database = "medical";
 
-$conn = mysqli_connect($servername , $username , $password , $dbname); 
+$conn = new mysqli($servername, $username, $password, $database);
 
 ?>
+
