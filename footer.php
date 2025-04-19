@@ -20,7 +20,6 @@
                                         <p class="info1">Your health, our priority. </p>
                                         <p class="info1">📍 Pakistan, Hyderabad</p>
                                         <p class="info1">Committed to excellence in patient care, technology, and service.</p>
-
                                         <p class="info1">
                                         </p>
                                     </div>
@@ -133,6 +132,7 @@
 
    
       <?php
+ // 👈 Session start karo top pe
 include("connect.php");
 
 if (isset($_POST['login'])) {
@@ -147,8 +147,14 @@ if (isset($_POST['login'])) {
 
     if ($res->num_rows > 0) {
         $user = $res->fetch_assoc();
+        
         if (password_verify($password, $user['password'])) {
-            // Save login info
+            // ✅ Session me user data save karo
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['role'] = $user['role'];
+            $_SESSION['name'] = $user['name']; // Optional: Agar 'name' column hai
+
+            // 📝 Login record DB me insert karo
             $log_stmt = $conn->prepare("INSERT INTO login (email, role) VALUES (?, ?)");
             $log_stmt->bind_param("ss", $email, $role);
             $log_stmt->execute();
@@ -164,6 +170,7 @@ if (isset($_POST['login'])) {
     $stmt->close();
 }
 ?>
+
 
 <!-- Login Form -->
 <form id="loginForm" method="post" class="custom-form active">

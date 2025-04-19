@@ -201,6 +201,7 @@
                             </div>
                             <div class="header-right-btn f-right d-none d-lg-block ml-30">
                                 <a href="#" class="btn header-btn" id="openModalBtn">Login</a>
+                                <a href="logout.php" class="btn header-btn" id="openModalBtn">Logout</a>                                
                             </div>
                         </div>
                     </div>   

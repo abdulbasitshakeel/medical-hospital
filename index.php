@@ -1,3 +1,5 @@
+<?php include("session.php"); ?>
+
 <?php include('header.php');?>
 <main>
     <!--? slider Area Start-->
