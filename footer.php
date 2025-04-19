@@ -124,6 +124,31 @@
         <button id="signupTab">Sign Up</button>
       </div>
 
+      <?php include("connect.php"); ?>
+      <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (isset($_POST['submit'])) {
+    echo "🔥 Form Submit Triggered<br>";
+
+    $name = $_POST['name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $subject = $_POST['subject'] ?? '';
+    $message = $_POST['message'] ?? '';
+
+    $sql = "INSERT INTO contact (Name, Email, Subject, Message)
+            VALUES ('$name', '$email', '$subject', '$message')";
+
+    if ($conn->query($sql)) {
+        echo "✅ Inserted Successfully";
+    } else {
+        echo "❌ Insert Error: ";
+    }
+}
+?>
+
+   
       <?php
 include("connect.php");
 
