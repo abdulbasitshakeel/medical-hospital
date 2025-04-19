@@ -26,7 +26,7 @@
                             <span>About Our Company</span>
                             <h2>Welcome To Our Hospital</h2>
                         </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                        <p> Our team of experienced doctors, skilled nurses, and dedicated staff work around the clock to ensure the well-being, comfort, and recovery of every patient. Equipped with state-of-the-art technology and a modern infrastructure, Pluse Medical is not just a place of treatment—it's a place of hope, healing, and trust. Your health is our mission.</p>
                         <div class="about-btn1 mb-30">
                             <a href="about.php" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
                         </div>

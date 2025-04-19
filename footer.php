@@ -17,8 +17,12 @@
                                 <div class="footer-tittle">
                                     <h4>About Us</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
-                                        <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                        <p class="info1">Your health, our priority. </p>
+                                        <p class="info1">📍 Pakistan, Hyderabad</p>
+                                        <p class="info1">Committed to excellence in patient care, technology, and service.</p>
+
+                                        <p class="info1">
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +56,8 @@
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="index.php" target="_blank">A/B</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> © 2025 [Pluse Medical]. All Rights Reserved.
+  <i class="fa fa-heart" aria-hidden="true"></i> <a href="index.php" target="_blank"></a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
@@ -124,29 +129,7 @@
         <button id="signupTab">Sign Up</button>
       </div>
 
-      <?php include("connect.php"); ?>
-      <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-if (isset($_POST['submit'])) {
-    echo "🔥 Form Submit Triggered<br>";
-
-    $name = $_POST['name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $subject = $_POST['subject'] ?? '';
-    $message = $_POST['message'] ?? '';
-
-    $sql = "INSERT INTO contact (Name, Email, Subject, Message)
-            VALUES ('$name', '$email', '$subject', '$message')";
-
-    if ($conn->query($sql)) {
-        echo "✅ Inserted Successfully";
-    } else {
-        echo "❌ Insert Error: ";
-    }
-}
-?>
+      
 
    
       <?php

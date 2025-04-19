@@ -13,11 +13,11 @@
                                 <h1 class="cd-headline letters scale">We care about your 
                                     <strong class="cd-words-wrapper">
                                         <b class="is-visible">health</b>
-                                        <b>sushi</b>
-                                        <b>steak</b>
+                                        <b>carei</b>
+                                        <b>healthyLife</b>
                                     </strong>
                                 </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
+                                <p data-animation="fadeInLeft" data-delay="0.1s">Your trusted destination for compassionate care and advanced medical solutions. At [Hospital Name], we bring together expert doctors, modern technology, and a patient-first approach to ensure your health and well-being at every step.</p>
                                 <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                             <span>About Our Company</span>
                             <h2>Welcome To Our Hospital</h2>
                         </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                        <p> Our team of experienced doctors, skilled nurses, and dedicated staff work around the clock to ensure the well-being, comfort, and recovery of every patient. Equipped with state-of-the-art technology and a modern infrastructure, Pluse Medical is not just a place of treatment—it's a place of hope, healing, and trust. Your health is our mission.</p>
                         <div class="about-btn1 mb-30">
                             <a href="about.php" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
                         </div>
@@ -151,7 +151,9 @@
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                  <p>Dental care services including cleaning, fillings, braces, and oral surgeries to keep your smile healthy.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -168,8 +170,8 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Cardiology</h3 >
+                                    <p>Diagnosis and treatment of heart-related diseases and conditions by expert heart specialists. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -186,8 +188,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>ENT Specialists</h3 >
+                                    <p>Expert care for ear, nose, and throat disorders including infections, hearing issues, and allergies.
+
+Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -204,8 +208,8 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Astrology</h3>
+                                    <p>Personalized astrological guidance for mental wellness, life decisions, and holistic balance. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -222,8 +226,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Neuroanatomy</h3 >
+                                    <p>Study and treatment of the brain and nervous system to manage neurological disorders.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -240,8 +246,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Blood Screening</h3 >
+                                    <p>Comprehensive blood tests to detect infections, deficiencies, and monitor overall health.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -560,7 +568,9 @@
                                 <span>Health</span>
                                 <p>Nov 30, 2020</p>
                             </div>
-                            <h4><a href="blog_details.html">health Lorem ipsum dolor, sit amet</a></h4>
+                            <h4><a href="blog_details.html">Complete medical support for prevention, diagnosis, and treatment to ensure overall well-being.
+
+</a></h4>
                             <a href="blog_details.html" class="read-more1">Read more</a>
                         </div>
                     </div>
@@ -575,7 +585,9 @@
                                 <span>Checkup</span>
                                 <p>Nov 30, 2020</p>
                             </div>
-                            <h4><a href="blog_details.html">check up Lorem ipsum dolor sit amet elit.</a></h4>
+                            <h4><a href="blog_details.html">Regular health examination to detect issues early and maintain a healthy lifestyle.
+
+</a></h4>
                             <a href="blog_details.html" class="read-more1">Read more</a>
                         </div>
                     </div>
@@ -590,7 +602,9 @@
                                 <span>Operation</span>
                                 <p>Nov 30, 2020</p>
                             </div>
-                            <h4><a href="blog_details.html">operation Lorem ipsum dolor sit</a></h4>
+                            <h4><a href="blog_details.html">Surgical procedures performed by expert doctors to treat injuries, diseases, or health conditions.
+
+</a></h4>
                             <a href="blog_details.html" class="read-more1">Read more</a>
                         </div>
                     </div>

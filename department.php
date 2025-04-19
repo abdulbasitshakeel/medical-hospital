@@ -80,7 +80,9 @@
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                  <p>Dental care services including cleaning, fillings, braces, and oral surgeries to keep your smile healthy.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -97,8 +99,8 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Cardiology</h3 >
+                                    <p>Diagnosis and treatment of heart-related diseases and conditions by expert heart specialists. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -115,8 +117,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>ENT Specialists</h3 >
+                                    <p>Expert care for ear, nose, and throat disorders including infections, hearing issues, and allergies.
+
+Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -133,8 +137,8 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Astrology</h3>
+                                    <p>Personalized astrological guidance for mental wellness, life decisions, and holistic balance. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -151,8 +155,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Neuroanatomy</h3 >
+                                    <p>Study and treatment of the brain and nervous system to manage neurological disorders.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -169,8 +175,10 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <h3>Blood Screening</h3 >
+                                    <p>Comprehensive blood tests to detect infections, deficiencies, and monitor overall health.
+
+</p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>

@@ -1,3 +1,28 @@
+<?php include("connect.php"); ?>
+      <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (isset($_POST['submit'])) {
+    echo "🔥 Form Submit Triggered<br>";
+
+    $name = $_POST['name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $subject = $_POST['subject'] ?? '';
+    $message = $_POST['message'] ?? '';
+
+    $sql = "INSERT INTO contact (Name, Email, Subject, Message)
+            VALUES ('$name', '$email', '$subject', '$message')";
+
+    if ($conn->query($sql)) {
+        echo "<script>alert('✅ Message Sent Successfully!'); window.location.href='index.php';</script>";
+    } else {
+        echo "❌ Insert Error: ";
+    }
+}
+?>
+
+
 <?php include('header.php');?>
     <main>
         <div class="slider-area2">
@@ -20,7 +45,7 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                    <form class="form-contact contact_form" action="footer.php" method="POST" id="contactForm" novalidate="novalidate">
+                    <form class="form-contact contact_form" action="contact.php" method="POST" id="contactForm" novalidate="novalidate">
                     <div class="row">
                                 
                                 <div class="col-sm-6">
@@ -40,7 +65,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder=" Enter Message"></textarea>
+                                        <textarea class="form-control w-100" name="messege" id="message" cols="30" rows="9" placeholder=" Enter Message"></textarea>
                                     </div>
                                 </div>
                             </div>
