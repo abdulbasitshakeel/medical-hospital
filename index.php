@@ -463,13 +463,13 @@ Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-30">
                                     <div class="select-itms">
-                                        <select name="select" id="select2">
-                                            <option value="">Health Law</option>
-                                            <option value="">saiful islam</option>
-                                            <option value="">Arafath Miya</option>
-                                            <option value="">Shakil Miya</option>
-                                            <option value="">Tamim Sharker</option>
-                                        </select>
+                                    <select name="select" id="select2" required>
+                                        <option value="">Choose Doctor</option>
+                                        <option value="dr john">dr john</option>
+                                        <option value="dr Miya">dr Miya</option>
+                                        <option value="dr Shakil">dr Shakil</option>
+                                        <option value="dr Tamim">dr Tamim</option>
+                                    </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">

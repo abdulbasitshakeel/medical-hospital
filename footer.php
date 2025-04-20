@@ -245,6 +245,40 @@ if (isset($_POST['signup'])) {
     </div>
   </div>
 
+  <?php
+include("connect.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $patient_name = $_POST['name'] ?? '';
+    $phone = $_POST['email'] ?? ''; // assuming email input is actually phone
+    $doctor_name = $_POST['select'] ?? '';
+    $email = $_POST['subject'] ?? '';
+    $message = $_POST['message'] ?? '';
+    $created_at = date("Y-m-d H-i-s");
+
+    // Make sure the number of columns matches the number of placeholders (5)
+    $sql = "INSERT INTO appointment (patient_name, phone, doctor_name, email, message, created_at)
+            VALUES (?, ?, ?, ?, ?, ?)";
+
+    $stmt = $conn->prepare($sql);
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+
+    // Bind 5 values ("sssss" = 5 strings)
+    $stmt->bind_param("ssssss", $patient_name, $phone, $doctor_name, $email, $message,$created_at);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('✅ Appointment Booked Successfully!'); window.location.href='index.php';</script>";
+    } else {
+        echo "<script>alert('❌ Booking Failed');</script>";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
   <script>
     const openBtn = document.getElementById("openModalBtn");
     const closeBtn = document.getElementById("closeModalBtn");

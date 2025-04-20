@@ -1,58 +1,61 @@
 <?php
-session_start(); // Start the session
+session_start();
+ob_start();
 
-// Step 1: Database connection
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "medical"; // Replace with your actual database name
+$dbname = "medical";
 
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
-// Step 2: Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Step 3: Check if the form is submitted
 if (isset($_POST['login'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
 
-    // Step 4: Query to select user by email
-    $sql = "SELECT * FROM signup WHERE email = '$email'";
-    $result = mysqli_query($conn, $sql);
+    $sql = "SELECT * FROM signup WHERE email = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    // Step 5: Check if the user exists
-    if (mysqli_num_rows($result) === 1) {
-        $row = mysqli_fetch_assoc($result);
+    if ($result && $result->num_rows === 1) {
+        $row = $result->fetch_assoc();
 
-        // Step 6: Verify the password using password_verify()
         if (password_verify($password, $row['password'])) {
-            // Password is correct, start session and set session variables
             $_SESSION['name'] = $row['name'];
             $_SESSION['email'] = $row['email'];
-            $_SESSION['role'] = $row['role'];  // Store role in session
+            $_SESSION['role'] = $row['role'];
 
-            // Step 7: Redirect based on user role
-            if ($row['role'] == 'admin') {
-                header("Location: admin-dashboard.php");  // Redirect to admin dashboard
-            } elseif ($row['role'] == 'doctor') {
-                header("Location: doctor-dashboard.php"); // Redirect to doctor dashboard
+            $role = trim(strtolower($row['role']));
+
+            // Debug output (remove later)
+            // echo "Logged in as: $role"; exit;
+
+            if ($role === 'admin') {
+                header("Location: dashboard.php");
+            } elseif ($role === 'doctor') {
+                header("Location: appointment-dashboard.php");
             } else {
-                header("Location: index.php"); // Redirect to patient dashboard
+                header("Location: index.php");
             }
-            exit; // Don't forget to exit after the redirect
+            exit;
         } else {
-            echo "❌ Incorrect password!";
+            echo "<script>alert('Incorrect Password!');</script>";
         }
     } else {
-        echo "❌ No user found with this email!";
+        echo "<script>alert('❌ No user found with this email!');</script>";
     }
 }
 
-mysqli_close($conn); // Close database connection
+mysqli_close($conn);
+ob_end_flush();
 ?>
+
 
 
 

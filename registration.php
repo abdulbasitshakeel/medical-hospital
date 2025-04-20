@@ -1,42 +1,29 @@
 <?php
 include ("connect.php");
-
 ?>
-
 <?php
-// Step 3: Check if form was submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Step 4: Collect and sanitize form data
+if($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['fullname'] ?? '';
     $email = $_POST['email'] ?? '';
-    $role = $_POST['role'] ?? '';
+    $role = $_POST['role'];
     $password = password_hash($_POST['password'] ?? '', PASSWORD_DEFAULT);
     $created_at = date("Y-m-d H:i:s");
-
-    // Step 5: Insert using prepared statement
     $sql = "INSERT INTO signup (name, email, password, role, created_at) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-
     if ($stmt) {
         $stmt->bind_param("sssss", $name, $email, $password, $role, $created_at);
-
-        if ($stmt->execute()){
+        if ($stmt->execute()) {
             header("Location: welcome.php");
         } else {
-            echo "<script>alert('Unsuccess : Please Try It')</script>" . $stmt->error;
+            echo "<script>alert('Unsuccess : Please Try it')</script>" . $stmt->error;
         }
-
         $stmt->close();
     } else {
         echo "❌ Prepare failed: " . $conn->error;
     }
 }
-
-// Step 6: Always close connection outside if block
 $conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,17 +133,18 @@ $conn->close();
       <div class="form-group">
         <label for="role">Register as</label>
         <select id="role" name="role" required>
-          <option value="" disabled selected>Select your role</option>
-          <option value="doctor">Doctor</option>
-          <option value="patient">Patient</option>
-          <option value="admin">Admin</option>
-        </select>
+  <option value="" disabled selected>Select your role</option>
+  <option value="doctor">Doctor</option>
+  <option value="patient">Patient</option>
+  <option value="admin">Admin</option>
+</select>
+
       </div>
 
-      <button type="submit" name="submit" class="register-btn">Register</button>
+      <button type="submit" class="register-btn">Register</button>
     </form>
 
-    <a href="welcome.php" class="login-link">Already have an account? Login here</a>
+    <a href="welcome.html" class="login-link">Already have an account? Login here</a>
   </div>
 </body>
 </html>

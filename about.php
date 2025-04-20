@@ -1,3 +1,37 @@
+
+<?php
+include("connect.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $patient_name = $_POST['name'] ?? '';
+    $phone = $_POST['email'] ?? ''; // assuming email input is actually phone
+    $doctor_name = $_POST['select'] ?? '';
+    $email = $_POST['subject'] ?? '';
+    $message = $_POST['message'] ?? '';
+    $created_at = date("Y-m-d H-i-s");
+
+    // Make sure the number of columns matches the number of placeholders (5)
+    $sql = "INSERT INTO appointment (patient_name, phone, doctor_name, email, message, created_at)
+            VALUES (?, ?, ?, ?, ?, ?)";
+
+    $stmt = $conn->prepare($sql);
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+
+    // Bind 5 values ("sssss" = 5 strings)
+    $stmt->bind_param("ssssss", $patient_name, $phone, $doctor_name, $email, $message,$created_at);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('✅ Appointment Booked Successfully!'); window.location.href='index.php';</script>";
+    } else {
+        echo "<script>alert('❌ Booking Failed');</script>";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
 <?php include('header.php');?>
 <main>
     <!--? Hero Start -->
@@ -161,7 +195,7 @@
                             </div>
                         </div>
                         <!--End Section Tittle  -->
-                        <form id="contact-form" action="#" method="POST">
+                        <form id="contact-form" action="about.php" method="POST">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-box user-icon mb-30">
@@ -175,13 +209,13 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-30">
                                     <div class="select-itms">
-                                        <select name="select" id="select2">
-                                            <option value="">Health Law</option>
-                                            <option value="">saiful islam</option>
-                                            <option value="">Arafath Miya</option>
-                                            <option value="">Shakil Miya</option>
-                                            <option value="">Tamim Sharker</option>
-                                        </select>
+                                    <select name="select" id="select2" required>
+                                        <option value="">Choose Doctor</option>
+                                        <option value="dr john">dr john</option>
+                                        <option value="dr Miya">dr Miya</option>
+                                        <option value="dr Shakil">dr Shakil</option>
+                                        <option value="dr Tamim">dr Tamim</option>
+                                    </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
