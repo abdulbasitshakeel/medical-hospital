@@ -144,7 +144,7 @@ $conn->close();
       <button type="submit" class="register-btn">Register</button>
     </form>
 
-    <a href="welcome.html" class="login-link">Already have an account? Login here</a>
+    <a href="welcome.php" class="login-link">Already have an account? Login here</a>
   </div>
 </body>
 </html>
